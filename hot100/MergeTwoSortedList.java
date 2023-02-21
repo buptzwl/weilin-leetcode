@@ -1,3 +1,5 @@
+Package: hot100;
+
 class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         // 这里的dummy是一个哨兵节点，不存储任何值，只是为了方便操作
