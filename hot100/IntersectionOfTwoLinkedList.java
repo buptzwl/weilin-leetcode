@@ -6,7 +6,7 @@ public class IntersectionOfTwoLinkedList {
         // 其实最简单的就是hashMap
         Map<ListNode,Integer> map = new HashMap<>();
         if(headA == null || headB == null){
-            return false;
+            return null;
         }
         while(headA !=null){
             map.put(headA,1);
@@ -14,9 +14,9 @@ public class IntersectionOfTwoLinkedList {
         }
         while(headB != null){
             if(map.containsKey(headB)){
-                return headB
+                return headB;
             }
-            headb = headB.next;
+            headB = headB.next;
         }
         return null;
  }
